@@ -1,0 +1,5 @@
+numpy==2.5.4
+matplotlib==3.11.2
+pytest==9.2.0
+# only needed for `python make_data.py --offline-digits` (smoke tests without internet)
+scikit-learn==1.9.1
