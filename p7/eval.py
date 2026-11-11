@@ -42,7 +42,7 @@ def write_csv(path, rows):
 
 
 def write_md(path, rows, group, metrics, title):
-    with open(path, "w") as f:
+    with open(path, "w", encoding="utf-8") as f:
         f.write(f"### {title}\n\n| " + " | ".join(group + metrics) + " |\n|" + "---|" * (len(group) + len(metrics)) + "\n")
         for r in rows:
             f.write("| " + " | ".join([str(r[g]) for g in group] +
